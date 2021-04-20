@@ -1,0 +1,9 @@
+print("\nRead csv with pandas, define header and column names")
+
+col_names = ['Name', 'Salary']
+
+data_types = {'Name':'str','Salary':'int'}
+
+df = pd.read_csv("salary.csv", header=None, names=col_names, dtype=data_types)
+
+print(df.head())
